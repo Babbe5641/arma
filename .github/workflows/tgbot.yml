@@ -21,10 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dotenv
+          pip install requests python-a2c
 
       - name: Run script
-        env:
-          TG_BOT_TOKEN: "YOUR_ACTUAL_BOT_TOKEN"
-          TG_CHAT_ID: "YOUR_ACTUAL_CHAT_ID"
-        run: python script.py
+        run: python main.py

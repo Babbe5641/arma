@@ -28,8 +28,7 @@ def send(text):
     # print(r.text)
 if __name__ == "__main__":
     send("Online")
-    while True:
-        if query():
-            send("LOW POP")
-            time.sleep(300)
-        time.sleep(10)
+    if query():
+        send("LOW POP")
+
+
