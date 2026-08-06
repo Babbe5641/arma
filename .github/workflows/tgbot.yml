@@ -24,4 +24,4 @@ jobs:
           pip install requests python-a2s
 
       - name: Run script
-        run: python main.py
+        run: python action.py

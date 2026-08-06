@@ -18,17 +18,13 @@ def query():
 
 def send(text):
     url = f"https://api.telegram.org/bot{tg}/sendMessage"
-    msg = {
-        "chat_id": tg_id,
-
-    }
+    msg = {"chat_id": tg_id,}
     msg["text"] = text
     r = requests.post(url, json=msg)
     # print(r.status_code)
     # print(r.text)
+
+
 if __name__ == "__main__":
-    send("Online")
     if query():
         send("LOW POP")
-
-
