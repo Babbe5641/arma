@@ -26,5 +26,6 @@ def send(text):
 
 
 if __name__ == "__main__":
+    send("online")
     if query():
         send("LOW POP")
